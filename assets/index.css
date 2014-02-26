@@ -1,8 +1,18 @@
 body {
-    margin-bottom: 2em;
+    margin: 0 0 2em;
     font: 16px "Libre Baskerville", "Lucida Grande", Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: #666;
+}
+h1 {
+    margin: 1em 0 0;
+    font-size: 2em;
+}
+.header {
+    padding-bottom: 1em;
+    overflow: hidden;
+    color: #FFF;
+    background: #967ADC;
 }
 .container {
     width: 640px;
@@ -23,7 +33,7 @@ body {
 #status {
     margin-bottom: 2em;
     padding: 5px 1em;
-    color: #4A89DC;
+    color: #967ADC;
     border: 2px solid #CCD1D9;
     border-top: none;
     background: #EAEAEA;

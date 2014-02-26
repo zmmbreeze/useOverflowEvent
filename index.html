@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <title>supportOverflowEvent</title>
     <meta name="Keywords" content="overflow,event,javascript,overflowchanged,underflow"/>
-    <meta name="Description" content="Detect overflow event support and create bind function."/>
+    <meta name="Description" content="Detect overflow event support and use it."/>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Libre+Baskerville">
     <link rel="stylesheet" href="assets/index.css" />
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css" />
     <script type="text/javascript" src="src/supportOverflowEvent.js"></script>
 </head>
 <body>
+    <div class="header">
+        <div class="container">
+            <h1>supportOverflowEvent</h1>
+            <p>Detect overflow event support and use it. Overflow event is supported on Chrome(tested on 9+) and Firefox(tested on 1.5+).</p>
+            <div>
+                <iframe src="http://ghbtns.com/github-btn.html?user=zmmbreeze&repo=supportOverflowEvent&type=watch&count=true&size=large"
+                allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=zmmbreeze&repo=supportOverflowEvent&type=fork&count=true&size=large"
+                allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30"></iframe>
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <h1>supportOverflowEvent</h1>
-        <p>Detect overflow event support and create bind function. Overflow event now supported on Chrome(tested on 9+) and Firefox(tested on 1.5+).</p>
-        <iframe src="http://ghbtns.com/github-btn.html?user=zmmbreeze&repo=supportOverflowEvent&type=watch&count=true&size=large"
-        allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30"></iframe>
-        <iframe src="http://ghbtns.com/github-btn.html?user=zmmbreeze&repo=supportOverflowEvent&type=fork&count=true&size=large"
-        allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30"></iframe>
-
         <div id="demo">
-            <div contenteditable>Input some text here to make it `overflow`.<br/></div>
+            <div contenteditable>Add some text here to make it `overflow`.<br/></div>
         </div>
         <div id="status"></div>
 
