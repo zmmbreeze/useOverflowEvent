@@ -10,11 +10,12 @@ body {
 }
 #demo {
     margin: 2em 0 0;
-    padding: 1em;
+    padding: 0.5em;
     height: 80px;
     overflow: auto;
     line-height: 2;
-    border: 1px solid #CCD1D9;
+    border: 2px solid #CCD1D9;
+    border-bottom-width: 1px;
 }
 #demo div {
     outline: none;
@@ -23,7 +24,7 @@ body {
     margin-bottom: 2em;
     padding: 5px 1em;
     color: #4A89DC;
-    border: 1px solid #CCD1D9;
+    border: 2px solid #CCD1D9;
     border-top: none;
     background: #EAEAEA;
 }
