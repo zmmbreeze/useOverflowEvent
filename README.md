@@ -3,7 +3,7 @@ supportOverflowEvent.js
 
 Detect overflow event support and create bind function. Overflow event now supported on Chrome(tested on 9+) and Firefox(tested on 1.5+).
 
-(DEMO)[];
+[DEMO](http://nodejs.in/supportOverflowEvent);
 
 HOW TO USE
 ---
@@ -15,7 +15,7 @@ supportOverflowEvent(function (addOverflowListener) {
         return;
     }
 
-    var container = document.getElementById('container');
+    var container = document.getElementById('demo');
     addOverflowListener(container, 'over', function () {
         console.log('overflow');
     });
