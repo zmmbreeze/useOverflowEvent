@@ -10,6 +10,12 @@
  * @version 0.1
  */
 (function () {
+    /**
+     * Detect overflow event support.
+     * Get addOverflowListener if supported.
+     *
+     * @param {function(function(Element, string, Function))} callback .
+     */
     function supportOverflowEvent(callback) {
         if ('OverflowEvent' in window &&
             typeof window.OverflowEvent === 'function') {
