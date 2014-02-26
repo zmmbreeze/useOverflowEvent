@@ -1,0 +1,38 @@
+body {
+    margin-bottom: 2em;
+    font: 16px "Libre Baskerville", "Lucida Grande", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #666;
+}
+.container {
+    width: 640px;
+    margin: 0 auto;
+}
+#demo {
+    margin: 2em 0 0;
+    padding: 1em;
+    height: 80px;
+    overflow: auto;
+    line-height: 2;
+    border: 1px solid #CCD1D9;
+}
+#demo div {
+    outline: none;
+}
+#status {
+    margin-bottom: 2em;
+    padding: 5px 1em;
+    color: #4A89DC;
+    border: 1px solid #CCD1D9;
+    border-top: none;
+    background: #EAEAEA;
+}
+
+pre {
+    padding: 1em !important;
+    line-height: 1;
+    font: 14px monospace;
+    border: 1px solid #CCD1D9 !important;
+    border-left: none !important;
+    border-right: none !important;
+}
