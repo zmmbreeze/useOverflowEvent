@@ -41,6 +41,7 @@ h1 {
 
 pre {
     padding: 1em !important;
+    overflow: auto;
     line-height: 1;
     font: 14px monospace;
     border: 1px solid #CCD1D9 !important;
