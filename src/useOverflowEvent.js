@@ -17,8 +17,7 @@
      * @param {function(function(Element, string, Function))} callback .
      */
     function useOverflowEvent(callback) {
-        if ('OverflowEvent' in window &&
-            typeof window.OverflowEvent === 'function') {
+        if ('OverflowEvent' in window) {
             // chrome(test on 9+) support overflowchanged event
             callback(function (element, type, cb) {
                 element.addEventListener('overflowchanged', function (e) {
