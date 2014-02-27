@@ -1,6 +1,6 @@
 /**
  * Detect overflow event support and create bind function.
- * https://github.com/zmmbreeze/supportOverflowEvent
+ * https://github.com/zmmbreeze/useOverflowEvent
  *
  * Thanks for Daniel's greate blog.
  * http://www.backalleycoder.com/2013/03/14/oft-overlooked-overflow-and-underflow-events/
@@ -16,7 +16,7 @@
      *
      * @param {function(function(Element, string, Function))} callback .
      */
-    function supportOverflowEvent(callback) {
+    function useOverflowEvent(callback) {
         if ('OverflowEvent' in window &&
             typeof window.OverflowEvent === 'function') {
             // chrome(test on 9+) support overflowchanged event
@@ -77,8 +77,8 @@
     }
 
     if (typeof define === 'function' && define.amd) {
-        define('supportOverflowEvent', [], supportOverflowEvent);
+        define('useOverflowEvent', [], useOverflowEvent);
     } else {
-        window.supportOverflowEvent = supportOverflowEvent;
+        window.useOverflowEvent = useOverflowEvent;
     }
 })();

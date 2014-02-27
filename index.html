@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>supportOverflowEvent</title>
+    <title>useOverflowEvent</title>
     <meta name="Keywords" content="overflow,event,javascript,overflowchanged,underflow"/>
     <meta name="Description" content="Way to detect overflow event support and use it with graceful degradation."/>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Libre+Baskerville">
     <link rel="stylesheet" href="assets/index.css" />
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css" />
-    <script type="text/javascript" src="src/supportOverflowEvent.js"></script>
+    <script type="text/javascript" src="src/useOverflowEvent.js"></script>
 </head>
 <body>
     <div class="header">
         <div class="container">
-            <h1>supportOverflowEvent</h1>
+            <h1>useOverflowEvent</h1>
             <p>Way to detect overflow event support and use it with graceful degradation. Overflow event is supported on Chrome(tested on 9+) and Firefox(tested on 1.5+).</p>
             <div>
-                <iframe src="http://ghbtns.com/github-btn.html?user=zmmbreeze&repo=supportOverflowEvent&type=watch&count=true&size=large"
+                <iframe src="http://ghbtns.com/github-btn.html?user=zmmbreeze&repo=useOverflowEvent&type=watch&count=true&size=large"
                 allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30"></iframe>
-                <iframe src="http://ghbtns.com/github-btn.html?user=zmmbreeze&repo=supportOverflowEvent&type=fork&count=true&size=large"
+                <iframe src="http://ghbtns.com/github-btn.html?user=zmmbreeze&repo=useOverflowEvent&type=fork&count=true&size=large"
                 allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30"></iframe>
-                <a href="https://twitter.com/share" data-text="Way to detect overflow event support and use it with graceful degradation." data-size="large" data-related="zhoumm" data-hashtags="supportOverflowEvent" data-url="http://nodejs.in/supportOverflowEvent/" class="twitter-share-button">Tweet</a>
+                <a href="https://twitter.com/share" data-text="Way to detect overflow event support and use it with graceful degradation." data-size="large" data-related="zhoumm" data-hashtags="useOverflowEvent" data-url="http://nodejs.in/useOverflowEvent/" class="twitter-share-button">Tweet</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 </script>
             </div>
@@ -33,7 +33,7 @@
         <div id="status"></div>
 
         <h2>HOW TO USE</h2>
-        <pre class="prettyprint lang-javascript">supportOverflowEvent(function (addOverflowListener) {
+        <pre class="prettyprint lang-javascript">useOverflowEvent(function (addOverflowListener) {
     if (!addOverflowListener) {
         // browser not support overflow event
         // do somethings or nothing
@@ -50,7 +50,7 @@
 });</pre>
     </div>
     <script>
-    supportOverflowEvent(function (addOverflowListener) {
+    useOverflowEvent(function (addOverflowListener) {
         var status = document.getElementById('status');
         status.innerHTML = 'Overflow event ' + (addOverflowListener ? 'supported' : 'not supported');
         if (!addOverflowListener) {
